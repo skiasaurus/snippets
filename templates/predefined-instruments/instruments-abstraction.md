@@ -36,12 +36,4 @@ Problems with instruments:
   If we're to ditch traditional \score blocks and have all the structure inferred
   from instruments, how will lilypond know in which "part" to put each instrument?
 
-
-For instruments experiment:
-score with multiple instruments, including multi-staff and shared staff instruments
-various durations
-repetition
-dynamics
-articulations
-tempo
-time sig changes
+- How to handle instruments sharing a staff, AND instruments being partcombined??
