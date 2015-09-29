@@ -1,3 +1,6 @@
+Build Status of `openLilyLib` on Travis:  
+[![Build Status](https://travis-ci.org/openlilylib/openlilylib.svg?branch=master)](https://travis-ci.org/openlilylib/openlilylib)
+
 What's this?
 ============
 
@@ -13,6 +16,53 @@ we would also like to integrate it with the core LilyPond project similarly to
 how stuff from LSR is imported into official documentation.
 We may also move this repository somewhere else, because we dislike the proprietary
 nature of GitHub.
+-->
+
+**[EDIT:** *Currently `openLilyLib` is undergoing a fundamental reorganization.  
+The below README contents is about the* current *implementation as a 
+collection of arbitrary snippets.  
+The new structure as a collection of targeted libraries can be found inside
+the `ly` directory.]*
+
+Contents
+========
+
+* [__custom-music-fonts__](custom-music-fonts) -
+    alternative fonts for LilyPond, that can be used instead of default Feta.
+* [__debugging-layout__](debugging-layout) -
+    tools that visualize LilyPond's layout decisions (e.g. directions),
+* [__general-tools__](general-tools) -
+    stuff for working on and with LilyPond itself.
+* [__input-shorthands__](input-shorthands) -
+    music functions and other tools that make writing LilyPond code easier,
+* [__notation-snippets__](notation-snippets) -
+    LilyPond code that produces some particular notation,
+* [__simple-examples__](simple-examples) -
+    snippets that are just explaining or demonstrating things from the documentation,
+* [__specific-solutions__](specific-solutions) -
+    hacks that aren't generic, just solve a very specific problem,
+* [__stylesheets__](stylesheets) -
+    a place for collections of user-designed layout settings ("house styles"),
+* [__templates__](templates) -
+    examples showing how to structure LilyPond code.
+
+Every category has a `README.md` file inside with more details,
+but if you're not sure which category to choose, don't worry!
+*It's not that important.*
+
+<!---
+Later on, we may divide the snippets into 2 (or more)
+"quality levels":
+- official ones, showing Recommended LilyPond Practice,
+- drafts, hacks etc. that were just written by someone
+  and may be useful, but may also not be.
+
+The policy would be to allow anyone to add anything to the "hacks",
+but adding/changing official ones (or moving a draft to official ones)
+would require some confirmation from someone else (not necessarily
+a full review, but at least a quick look).
+
+Update: actually, the status field probably already does this.
 -->
 
 
@@ -93,48 +143,6 @@ _Format_ tool.
 * When you make changes in your snippets, please contribute
 updates to the repository! :-)
 
-
-Snippet categories
-==================
-
-* [__custom-music-fonts__](custom-music-fonts) -
-    alternative fonts for LilyPond, that can be used instead of default Feta.
-* [__debugging-layout__](debugging-layout) -
-    tools that visualize LilyPond's layout decisions (e.g. directions),
-* [__general-tools__](general-tools) -
-    stuff for working on and with LilyPond itself.
-* [__input-shorthands__](input-shorthands) -
-    music functions and other tools that make writing LilyPond code easier,
-* [__notation-snippets__](notation-snippets) -
-    LilyPond code that produces some particular notation,
-* [__simple-examples__](simple-examples) -
-    snippets that are just explaining or demonstrating things from the documentation,
-* [__specific-solutions__](specific-solutions) -
-    hacks that aren't generic, just solve a very specific problem,
-* [__stylesheets__](stylesheets) -
-    a place for collections of user-designed layout settings ("house styles"),
-* [__templates__](templates) -
-    examples showing how to structure LilyPond code.
-
-Every category has a `README.md` file inside with more details,
-but if you're not sure which category to choose, don't worry!
-*It's not that important.*
-
-
-<!---
-Later on, we may divide the snippets into 2 (or more)
-"quality levels":
-- official ones, showing Recommended LilyPond Practice,
-- drafts, hacks etc. that were just written by someone
-  and may be useful, but may also not be.
-
-The policy would be to allow anyone to add anything to the "hacks",
-but adding/changing official ones (or moving a draft to official ones)
-would require some confirmation from someone else (not necessarily
-a full review, but at least a quick look).
-
-Update: actually, the status field probably already does this.
--->
 
 Contact
 =======
