@@ -219,8 +219,8 @@ useLibrary =
               (set! oll-loaded-libraries
                     (append oll-loaded-libraries
                       `(,name)))
-              (oll:log "... completed." ""))
-             (oll:warn location (format "Library main file \"~a\" not found" main-file))))))))
+              (oll:log "... completed." "")))
+             (oll:warn location (format "Library main file \"~a\" not found" main-file)))))))
 
 
 % Load a module from within a library.
@@ -279,13 +279,7 @@ useModule =
 
                    ;; include init-file if present
                    (if init-file
-                       (if (lilypond-greater-tha
-                   (if init-file
                        (if (lilypond-greater-than? "2.19.21")
-                       (ly:parser-include-string
-                         (format "\\include \"~a\"" init-file))
-                       (ly:parser-include-string parser
-                         (format "\\include \"~a\"" init-file))))n? "2.19.21")
                        (ly:parser-include-string
                          (format "\\include \"~a\"" init-file))
                        (ly:parser-include-string parser

@@ -10,7 +10,7 @@
 
 %%% The usual includes and module loading
 \include "openlilylib"
-\loadModule "gridly"
+\useLibrary "gridly"
 
 %%% Initialize the grid: three segments for a single part
 \gridInit 2 #'("voice")
@@ -21,10 +21,10 @@
 \with {
   closing = \relative c' { c }
   lyrics = \lyricmode { This is a test }
-}
-\relative c' {
-  \key c \major
-  c e g c, ~ |
+  music = \relative c' {
+    \key c \major
+    c e g c, ~ |
+  }
 }
 
 \gridPutMusic "voice" 2
@@ -32,9 +32,9 @@
   opening = \relative c' { \partial 4 c4 ~ }
   opening-lyrics = \lyricmode { test }
   lyrics = \lyricmode { a simple test! }
-}
-\relative c' {
-  c d b c |
+  music = \relative c' {
+    c d b c |
+  }
 }
 
 \gridCompileCell "voice" 1
